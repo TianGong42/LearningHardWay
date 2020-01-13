@@ -1,1 +1,1 @@
-# LearningHardWay
+# 笨方法学python学习目录，计划在2月1号时把整本书过一遍
