@@ -5,6 +5,7 @@ class MyStuff(object):
 
     def apple(self):
         print("I AM APPLES!")
+      
 
 thing = MyStuff()
 thing.apple()

@@ -141,3 +141,34 @@ readline()函数：里面的代码会扫描文件的每一个字节，直到找�
 - 地图(Map)
 - 主控舱(The Bridge)
 - 引擎(Engine)
+
+## 创建类层次结构图和对象图
+- Map 地图
+    - next_scene(方法)
+    - opening_scene(方法)
+- Engine 引擎
+    - play(方法)
+- Scene 场景
+    - enter(方法)
+    - Death 死亡
+    - Central Corridor  中央走廊
+    - Laser Weapon Armory 激光武器库
+    - The Bridge 主控舱
+    - Escape Pod 救生舱
+
+## 最后结果没有跑起来
+ ```
+File ".\ex43.py", line 301, in <module>
+    a_game.play()
+  File ".\ex43.py", line 25, in play
+    next_scene_name = current_scene.enter()
+ ```
+ 反正我也是莫名其妙，再说了
+
+ # 第四十四章 继承与组合
+ 继承就是用来指明一个类的大部分或全部功能都是从一个父类中获得的。
+ 父类和子类有3种交互方式
+ 1. 子类上的动作完全等同于父类上的动作
+ 2. 子类上的动作完全覆盖了父类上的动作
+ 3. 子类上的动作部分替换了父类上的动作
+ 
